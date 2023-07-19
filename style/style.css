@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --primary-color: #212121;
+  --second--color: #323232;
+  --terc-color: #0D7377;
+  --forth-color: #14FFEC;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(var(--primary-color), var(--second--color));
+}
+
+.pokedex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ground-img {
+  width: 80%;
+}
+
+.poke-change {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.poke-render {
+  width: 50%;
+  position: absolute;
+  bottom: 35%;
+  transition: 0.3s;
+}
+
+.poke-info {
+  height: 100%;
+  width: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  background-color: transparent;
+  color: var(--forth-color);
+  border: none;
+  font-size: 5em;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 1em;
+  width: 100px;
+  height: 100px;
+}
+
+.buttons:hover {
+  color: var(--terc-color);
+}
+
+.buttons:active {
+  font-size: 4em;
+}
+
+.name-and-number {
+  display: flex;
+  gap: 0px 10px;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2em;
+  margin-bottom: 100px;
+}
+
+#pokeNumber {
+  color: var(--forth-color);
+}
+
+#searchForm {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchInput {
+  width: 80%;
+  height: 40px;
+  padding: 5px 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--terc-color);
+  font-family: 'Press Start 2P', cursive;
+  color: var(--forth-color);
+  transition: 0.3s;
+}
+
+#searchInput::placeholder {
+  color: var(--forth-color);
+}
+
+#searchInput:focus {
+  box-shadow: 0px 0px 20px var(--terc-color);
+  border: 2px solid var(--forth-color);
+  width: 100%;
+}
+
+@media screen and (max-height: 680px) {
+  .poke-render {
+    width: 40%;
+  }
+
+  .ground-img {
+    width: 60%;
+  }
+}

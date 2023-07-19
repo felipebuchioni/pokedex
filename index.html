@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="shortcut icon" href="img/pokedex-app-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/style.css">
+  <!-- JAVASCRIPT -->
+  <script defer src="script/script.js"></script>
+  <title>Pokédex</title>
+</head>
+<body>
+  
+    <main class="pokedex">
+
+      <div class="name-and-number">
+        <p id="pokeNumber"></p>
+        <p>-</p>
+        <p id="pokeName"></p>
+      </div>
+
+      <div class="poke-change">
+        <button class="buttons button-prev" id="prevBtn"><i class="fa-solid fa-caret-left"></i></button>
+
+        <section class="poke-info">
+            <img src="" alt="" class="poke-render" id="pokeImage">
+            <img src="/img/ground-img.png" alt="" class="ground-img">
+        </section>
+  
+        <button class="buttons button-next" id="nextBtn"><i class="fa-solid fa-caret-right"></i></button>
+      </div>
+
+      <form action="" id="searchForm">
+        <input type="search" id="searchInput" placeholder="Name of number">
+      </form>
+    </main>
+
+</body>
+</html>
